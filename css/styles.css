@@ -95,22 +95,26 @@ main {
     var(--bkg-dark-green) 100%
   );
   padding-bottom: 2rem;
+  margin-top: 15rem;
 }
 
 main h2 {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  padding-bottom: 4rem;
+  padding-block: 3rem;
   color: var(--titles);
   text-shadow: 2px 2px 2px var(--title-shadow);
-  padding-top: 16rem;
 }
+
+section {
+  scroll-margin-top: 15rem;
+}
+
 .animalContainer {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 30vh;
-  margin-bottom: 2rem;
   grid-auto-flow: row;
   padding-inline: 1rem;
   gap: 2rem;
@@ -202,6 +206,9 @@ footer p {
 }
 
 @media screen and (min-width: 1024px) {
+  main {
+    margin-top: 6.5rem;
+  }
   .pageContainer {
     grid-template-areas:
       "header header header header"
@@ -220,9 +227,8 @@ footer p {
   .navBar li {
     width: 16vw;
   }
-
-  main h2 {
-    padding-top: 7.5rem;
+  section {
+    scroll-margin-top: 6.5rem;
   }
 
   .animalContainer {
